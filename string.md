@@ -202,3 +202,71 @@ console.log(slicedText); // Outputs: "fun"
 6. **Regular Expressions**: Use regex for complex string matching and validation.
 
 
+---------------------------------------------
+
+### 1. `substring()`
+The `substring()` method is used to extract characters from a string between two specified indices.
+
+#### Syntax
+```javascript
+string.substring(startIndex, endIndex);
+```
+- **`startIndex`**: The index at which to start the extraction (inclusive).
+- **`endIndex`**: The index at which to end the extraction (exclusive).
+
+#### Example
+```javascript
+let text = "Hello, World!";
+let result = text.substring(7, 12); // Extracts from index 7 to 11
+console.log(result); // Outputs: "World"
+```
+
+### 2. `substr()`
+The `substr()` method is similar to `substring()`, but it takes a starting index and a length instead of an end index.
+
+#### Syntax
+```javascript
+string.substr(startIndex, length);
+```
+- **`startIndex`**: The index at which to start the extraction.
+- **`length`**: The number of characters to extract.
+
+#### Example
+```javascript
+let text = "Hello, World!";
+let result = text.substr(7, 5); // Starts at index 7 and extracts 5 characters
+console.log(result); // Outputs: "World"
+```
+
+### 3. `toLowerCase()`
+The `toLowerCase()` method converts all characters in a string to lowercase.
+
+#### Syntax
+```javascript
+string.toLowerCase();
+```
+
+#### Example
+```javascript
+let text = "Hello, World!";
+let result = text.toLowerCase();
+console.log(result); // Outputs: "hello, world!"
+```
+
+### Combining These Methods
+You can chain these methods together to manipulate strings more effectively. For example, you can extract a substring and then convert it to lowercase:
+
+#### Example
+```javascript
+let text = "Hello, World!";
+let result = text.substring(7, 12).toLowerCase(); // Extract "World" and convert to lowercase
+console.log(result); // Outputs: "world"
+```
+
+### Summary
+- **`substring()`**: Extracts characters between two indices.
+- **`substr()`**: Extracts a specified number of characters from a starting index.
+- **`toLowerCase()`**: Converts the entire string to lowercase.
+
+
+
