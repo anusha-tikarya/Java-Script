@@ -269,4 +269,80 @@ console.log(result); // Outputs: "world"
 - **`toLowerCase()`**: Converts the entire string to lowercase.
 
 
+### 1. `replace()`
+The `replace()` method is used to replace a specified substring or pattern in a string with a new substring.
+
+#### Syntax
+```javascript
+string.replace(searchValue, newValue);
+```
+- **`searchValue`**: The substring or regular expression to search for.
+- **`newValue`**: The substring to replace with.
+
+#### Example
+```javascript
+let text = "Hello, World!";
+let newText = text.replace("World", "JavaScript");
+console.log(newText); // Outputs: "Hello, JavaScript!"
+```
+
+#### Note
+- If you use a regular expression with the `replace()` method, you can replace all occurrences of a substring by using the global flag `g`:
+```javascript
+let text = "Hello, World! World!";
+let newText = text.replace(/World/g, "JavaScript");
+console.log(newText); // Outputs: "Hello, JavaScript! JavaScript!"
+```
+
+### 2. `trimStart()`
+The `trimStart()` method removes whitespace from the beginning of a string.
+
+#### Syntax
+```javascript
+string.trimStart();
+```
+
+#### Example
+```javascript
+let text = "   Hello, World!   ";
+let trimmedStart = text.trimStart();
+console.log(trimmedStart); // Outputs: "Hello, World!   "
+```
+
+### 3. `trim()`
+The `trim()` method removes whitespace from both the beginning and the end of a string.
+
+#### Syntax
+```javascript
+string.trim();
+```
+
+#### Example
+```javascript
+let text = "   Hello, World!   ";
+let trimmed = text.trim();
+console.log(trimmed); // Outputs: "Hello, World!"
+```
+
+### 4. `trimEnd()`
+The `trimEnd()` method removes whitespace from the end of a string.
+
+#### Syntax
+```javascript
+string.trimEnd();
+```
+
+#### Example
+```javascript
+let text = "   Hello, World!   ";
+let trimmedEnd = text.trimEnd();
+console.log(trimmedEnd); // Outputs: "   Hello, World!"
+```
+
+### Summary
+- **`replace()`**: Replaces specified substrings or patterns in a string.
+- **`trimStart()`**: Removes whitespace from the beginning of a string.
+- **`trim()`**: Removes whitespace from both ends of a string.
+- **`trimEnd()`**: Removes whitespace from the end of a string.
+
 
