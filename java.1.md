@@ -253,3 +253,123 @@ for (let i = 0; i < twoDArray.length; i++) {
 - **Initialization**: Use nested loops for dynamic initialization.
 - **Displaying Elements**: Use `console.log()` for displaying entire arrays or specific elements by indexing.
 
+
+### 3. `pop()`
+- **What it does**: Removes the last element from an array and returns that element.
+- **Example**:
+  ```javascript
+  let fruits = ['apple', 'banana', 'cherry'];
+  let lastFruit = fruits.pop(); // Removes 'cherry'
+  console.log(fruits); // Outputs: ['apple', 'banana']
+  console.log(lastFruit); // Outputs: 'cherry'
+  ```
+
+### 4. `shift()`
+- **What it does**: Removes the first element from an array and returns that element.
+- **Example**:
+  ```javascript
+  let fruits = ['apple', 'banana', 'cherry'];
+  let firstFruit = fruits.shift(); // Removes 'apple'
+  console.log(fruits); // Outputs: ['banana', 'cherry']
+  console.log(firstFruit); // Outputs: 'apple'
+  ```
+
+### 5. `indexOf()`
+- **What it does**: Returns the index of the first occurrence of a specified element in the array. If the element is not found, it returns `-1`.
+- **Example**:
+  ```javascript
+  let fruits = ['apple', 'banana', 'cherry'];
+  let index = fruits.indexOf('banana'); // Outputs: 1
+  console.log(index);
+  ```
+
+### 6. `includes()`
+- **What it does**: Checks if an array contains a specified element. Returns `true` if found, otherwise `false`.
+- **Example**:
+  ```javascript
+  let fruits = ['apple', 'banana', 'cherry'];
+  let hasBanana = fruits.includes('banana'); // Outputs: true
+  console.log(hasBanana);
+  ```
+
+### 7. `concat()`
+- **What it does**: Merges two or more arrays into a new array.
+- **What it does**: The `concat()` method is used to merge two or more arrays into a new array. It does not modify the existing arrays; instead, it creates and returns a new array containing the combined elements.
+
+### Example
+
+Here’s how to use `concat()`:
+
+```javascript
+let fruits1 = ['apple', 'banana'];
+let fruits2 = ['cherry', 'date'];
+
+// Using concat to merge arrays
+let allFruits = fruits1.concat(fruits2);
+
+console.log(allFruits); // Outputs: ['apple', 'banana', 'cherry', 'date']
+```
+
+### Additional Usage
+
+You can also concatenate multiple arrays or even individual elements:
+
+```javascript
+let moreFruits = ['fig', 'grape'];
+
+// Concatenating multiple arrays and elements
+let combinedFruits = fruits1.concat(fruits2, moreFruits, 'kiwi');
+
+console.log(combinedFruits); // Outputs: ['apple', 'banana', 'cherry', 'date', 'fig', 'grape', 'kiwi']
+```
+
+### Summary
+
+- **Non-destructive**: `concat()` does not change the original arrays.
+- **Returns a new array**: The result is a new array that includes all the concatenated elements.
+- **Flexibility**: You can concatenate multiple arrays and additional elements at once.
+
+This makes `concat()` a useful method for combining arrays in a clean and straightforward way! 
+
+
+### 8. `sort()`
+- **What it does**: Sorts the elements of an array in place and returns the sorted array. By default, it sorts elements as strings, which may lead to unexpected results with numbers.
+- **Example**:
+```javascript
+let arr1 = [4, 2, 5, 3, 1];
+console.log(arr1); // Outputs: [4, 2, 5, 3, 1]
+
+arr1.sort();
+console.log(arr1); // Outputs: [1, 2, 3, 4, 5] (sorted as strings)
+```
+
+**Note**: To sort numbers correctly, you can provide a compare function:
+```javascript
+arr1.sort((a, b) => a - b); // Sorts numerically
+console.log(arr1); // Outputs: [1, 2, 3, 4, 5]
+```
+
+### 9. `reverse()`
+- **What it does**: Reverses the order of the elements in an array in place and returns the reversed array.
+- **Example**:
+```javascript
+arr1.reverse();
+console.log(arr1); // Outputs: [5, 4, 3, 2, 1] (reversed order)
+```
+
+### Complete Example
+Combining both methods:
+```javascript
+let arr1 = [4, 2, 5, 3, 1];
+console.log(arr1); // Outputs: [4, 2, 5, 3, 1]
+
+arr1.sort((a, b) => a - b); // Sort numerically
+console.log(arr1); // Outputs: [1, 2, 3, 4, 5]
+
+arr1.reverse();
+console.log(arr1); // Outputs: [5, 4, 3, 2, 1]
+```
+
+### Summary
+- **`sort()`**: Arranges array elements in order (string by default, numerical with a compare function).
+- **`reverse()`**: Flips the order of the array elements.
