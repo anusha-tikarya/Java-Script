@@ -373,3 +373,66 @@ console.log(arr1); // Outputs: [5, 4, 3, 2, 1]
 ### Summary
 - **`sort()`**: Arranges array elements in order (string by default, numerical with a compare function).
 - **`reverse()`**: Flips the order of the array elements.
+
+let a = 10;
+// if(a%2 == 0){
+//     console.log("even");    
+// }
+// else{
+//     console.log("odd");
+// }
+ 
+const result =  (a) => a%2 == 0 ? console.log("even"): console.log("odd");
+result(a)
+ 
+```javascipt 
+let a = 10;
+// if(a%2 == 0){
+//     console.log("even");    
+// }
+// else{
+//     console.log("odd");
+// }
+ 
+const result =  (a) => a%2 == 0 ? console.log("even"): console.log("odd");
+result(a) 
+```
+### Original Code Explanation
+
+1. **Variable Declaration**:
+   ```javascript
+   let a = 10; // Assigns the value 10 to the variable 'a'.
+   ```
+
+2. **If-Else Statement**:
+   ```javascript
+   if (a % 2 == 0) {
+       console.log("even");    
+   } else {
+       console.log("odd");
+   }
+   ```
+   - This checks if `a` is even by using the modulus operator (`%`). If `a` divided by `2` leaves no remainder (`0`), it's even; otherwise, it's odd.
+
+### Refactored Using Arrow Function
+
+3. **Arrow Function**:
+   ```javascript
+   const result = (a) => a % 2 == 0 ? console.log("even") : console.log("odd");
+   result(a);
+   ```
+   - This is a concise way to define the same logic using an arrow function.
+   - It takes `a` as a parameter and uses the ternary operator (`? :`) to determine if `a` is even or odd.
+   - It calls the function `result(a)`, passing the value of `a`.
+
+### Output
+For `let a = 10`, both the original and the refactored code will output:
+```
+even
+```
+
+### Summary
+- **Modulus Operator (`%`)**: Checks for evenness or oddness.
+- **Arrow Function**: Provides a more concise syntax.
+- **Ternary Operator**: A shorthand for `if-else` statements.
+
