@@ -1,0 +1,251 @@
+
+
+### JavaScript Basics
+
+- **Array**: A data structure that can store multiple values, both homogeneous (same type) and heterogeneous (different types).
+
+### Storing a Value
+
+To store the value `75` in JavaScript:
+```javascript
+let value = 75; // Using a variable
+```
+
+### JavaScript Type System
+
+- **Is JavaScript Strictly Typed?**: No, JavaScript is loosely typed, meaning variables can hold any data type and can change types.
+
+### Console Logging
+
+To display a variable in the console:
+```javascript
+console.log(marks); // Replace 'marks' with your variable name
+```
+
+### Concept of Arrays
+
+- Arrays are useful for storing multiple values, such as marks for multiple students:
+```javascript
+let marks = [75, 85, 90]; // Example array for three students
+```
+
+### Overcoming Limitations
+
+- Arrays help overcome the limitation of single variable storage when handling bulk data.
+
+### Dimensions of Arrays
+
+- **1D Array**: A single list of values.
+  ```javascript
+  let oneDArray = [1, 2, 3];
+  ```
+
+- **2D Array**: An array of arrays (like a matrix).
+  ```javascript
+  let twoDArray = [[1, 2], [3, 4]];
+  ```
+
+- **3D Array**: An array of 2D arrays.
+  ```javascript
+  let threeDArray = [[[1]], [[2]]];
+  ```
+
+### Dimensions Explanation
+
+- **D (Dimension)**: Refers to the number of indices needed to access an element. For example:
+  - 1D: One index
+  - 2D: Two indices
+  - 3D: Three indices
+
+### Minimum Elements in an Array
+
+- Minimum elements in an array = 1 (an array can hold at least one item).
+
+
+### What is an Object in JavaScript?
+
+- **Object**: A collection of key-value pairs where keys are strings (or Symbols) and values can be any data type, including other objects, arrays, functions, etc.
+
+Example of an object:
+```javascript
+let employee = {
+    name: "John Doe",
+    salary: 50000,
+    location: "Pune"
+};
+```
+
+### Salary of All Capgemini Employees in Pune
+
+To represent the salary of all Capgemini employees located in Pune, you can use an array of objects, where each object represents an employee. This is often necessary when you have multiple employees.
+
+Example:
+```javascript
+let employeesInPune = [
+    { name: "Alice", salary: 60000, location: "Pune" },
+    { name: "Bob", salary: 55000, location: "Pune" },
+    { name: "Charlie", salary: 70000, location: "Pune" }
+];
+```
+
+### Number of Dimensions Needed
+
+- **1D Array**: If you only need to store the salaries of all employees in Pune, a simple 1D array of numbers would suffice:
+    ```javascript
+    let salaries = [60000, 55000, 70000];
+    ```
+
+- **2D Array**: If you need to store more complex data (e.g., salaries along with names and locations), a 2D array (array of objects) is ideal:
+    ```javascript
+    let employees = [
+        ["Alice", 60000, "Pune"],
+        ["Bob", 55000, "Pune"],
+        ["Charlie", 70000, "Pune"]
+    ];
+    ```
+  However, using an array of objects is more readable and manageable:
+    ```javascript
+    let employeesInPune = [
+        { name: "Alice", salary: 60000 },
+        { name: "Bob", salary: 55000 },
+        { name: "Charlie", salary: 70000 }
+    ];
+    ```
+
+### Why Use Objects?
+
+- Objects provide better organization and readability, especially when dealing with multiple attributes (like name, salary, and location). They allow you to group related data together, making your code easier to understand and maintain.
+
+
+### Array Basics
+
+1. **Array Initialization**:
+   - **Using Array Literal**:
+     ```javascript
+     let marks = [70, 80, 85];
+     ```
+   - **Using Array Constructor**:
+     ```javascript
+     let marks = new Array(70, 80, 85);
+     ```
+
+2. **Indexing**: 
+   - Arrays are zero-indexed, meaning the first element is accessed with index `0`.
+     ```javascript
+     console.log(marks[0]); // Outputs: 70
+     ```
+
+3. **Slicing**:
+   - Use the `slice()` method to extract a portion of an array:
+     ```javascript
+     let slicedMarks = marks.slice(1, 3); // Outputs: [80, 85]
+     ```
+
+4. **Dynamic Sizing**:
+   - Arrays in JavaScript are not fixed in size; they can grow dynamically.
+     ```javascript
+     marks.push(60); // Adds 60 to the end of the array
+     console.log(marks); // Outputs: [70, 80, 85, 60]
+     ```
+
+5. **Pushing Elements**:
+   - You can add new elements to an array using the `push()` method:
+     ```javascript
+     let marks = []; // Start with an empty array
+     marks.push(10); // Adds 10
+     marks.push(20); // Adds 20
+     marks.push(40); // Adds 40
+     console.log(marks); // Outputs: [10, 20, 40]
+     ```
+
+6. **Creating an Array with Fixed Size**:
+   - You can create an array of a specific size but it will be empty initially:
+     ```javascript
+     let marks = new Array(3); // Creates an array with 3 empty slots
+     marks[0] = 60; // Fill the first slot
+     marks[1] = 70; // Fill the second slot
+     marks[2] = 80; // Fill the third slot
+     console.log(marks); // Outputs: [60, 70, 80]
+     ```
+
+### Summary
+
+- **Array Creation**: Use either array literals `[]` or the `new Array()` constructor.
+- **Dynamic Resizing**: You can modify the size of arrays by adding or removing elements.
+- **Slicing**: Use `slice()` to get a part of the array.
+- **Indexing**: Access elements using zero-based indexing.
+
+
+### 1. Using Array Literals
+
+#### Create and Initialize
+```javascript
+let twoDArray = [
+    [1, 2, 3],
+    [4, 5, 6],
+    [7, 8, 9]
+];
+```
+
+#### Display Elements
+```javascript
+console.log(twoDArray); // Outputs the entire 2D array
+console.log(twoDArray[0][1]); // Outputs: 2 (first row, second column)
+```
+
+### 2. Using the `new Array()` Constructor
+
+#### Create and Initialize
+```javascript
+let twoDArray = new Array(3); // Create an array with 3 rows
+for (let i = 0; i < twoDArray.length; i++) {
+    twoDArray[i] = new Array(3); // Create 3 columns for each row
+}
+
+// Initialize values
+twoDArray[0][0] = 1;
+twoDArray[0][1] = 2;
+twoDArray[0][2] = 3;
+twoDArray[1][0] = 4;
+twoDArray[1][1] = 5;
+twoDArray[1][2] = 6;
+twoDArray[2][0] = 7;
+twoDArray[2][1] = 8;
+twoDArray[2][2] = 9;
+```
+
+#### Display Elements
+```javascript
+console.log(twoDArray); // Outputs the entire 2D array
+console.log(twoDArray[1][2]); // Outputs: 6 (second row, third column)
+```
+
+### 3. Using Nested Loops for Initialization
+
+#### Create and Initialize
+```javascript
+let rows = 3;
+let cols = 3;
+let twoDArray = new Array(rows);
+
+for (let i = 0; i < rows; i++) {
+    twoDArray[i] = new Array(cols);
+    for (let j = 0; j < cols; j++) {
+        twoDArray[i][j] = i * cols + j + 1; // Fill with incremental values
+    }
+}
+```
+
+#### Display Elements
+```javascript
+for (let i = 0; i < twoDArray.length; i++) {
+    console.log(twoDArray[i]); // Outputs each row of the 2D array
+}
+```
+
+### Summary
+
+- **2D Array Definition**: You can use array literals or the `new Array()` constructor.
+- **Initialization**: Use nested loops for dynamic initialization.
+- **Displaying Elements**: Use `console.log()` for displaying entire arrays or specific elements by indexing.
+
