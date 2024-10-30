@@ -87,6 +87,10 @@ let employeesInPune = [
     { name: "Charlie", salary: 70000, location: "Pune" }
 ];
 ```
+## Dimension: Refers to the number of indices required to access an element in an array. Each dimension adds a level of complexity to how you organize and access data.
+
+## Index: The position of an element in an array. In JavaScript, array indices start at 0.
+
 
 ### Number of Dimensions Needed
 
