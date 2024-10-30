@@ -143,6 +143,54 @@ let regex = /hello/i; // 'i' makes it case-insensitive
 let testString = "Hello, World!";
 console.log(regex.test(testString)); // Outputs: true
 ```
+### 7. slicing 
+The `slice()` method in JavaScript is used to extract a portion of a string and return it as a new string. It does not modify the original string. Here’s how to use it:
+
+### Syntax
+```javascript
+string.slice(startIndex, endIndex);
+```
+
+- **`startIndex`**: The index at which to start the extraction (inclusive).
+- **`endIndex`**: The index at which to end the extraction (exclusive). This parameter is optional; if omitted, the slice will extract to the end of the string.
+
+### Examples
+
+#### 1. Basic Usage
+```javascript
+let text = "Hello, World!";
+let slicedText = text.slice(7, 12); // Extracts from index 7 to 11
+console.log(slicedText); // Outputs: "World"
+```
+
+#### 2. Omitting the `endIndex`
+```javascript
+let text = "JavaScript is fun!";
+let slicedText = text.slice(0, 10); // Extracts from index 0 to 9
+console.log(slicedText); // Outputs: "JavaScript"
+```
+
+#### 3. Using Negative Indices
+Negative indices can be used to specify positions from the end of the string.
+```javascript
+let text = "Hello, World!";
+let slicedText = text.slice(-6); // Starts from the 6th character from the end
+console.log(slicedText); // Outputs: "World!"
+```
+
+#### 4. Slicing with Negative Indices
+You can also use negative indices for both `startIndex` and `endIndex`.
+```javascript
+let text = "JavaScript is fun!";
+let slicedText = text.slice(-4, -1); // Extracts from the 4th last to the 2nd last
+console.log(slicedText); // Outputs: "fun"
+```
+
+### Summary
+- `slice()` creates a new string based on specified indices.
+- It does not change the original string.
+- Supports both positive and negative indices.
+
 
 ### Summary
 
