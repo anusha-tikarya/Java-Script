@@ -165,4 +165,51 @@ has context menu
 ![Uploading {C24358C6-DBFC-4EBA-A106-3B61D97DE952}.png…]()
 
 <img width="960" alt="{8C2F9325-4BBE-4034-A74B-2200CA5A656D}" src="https://github.com/user-attachments/assets/64dd01cb-b0f2-48f3-8b6a-f21e71d902c1">
-
+```html
+<!-- <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Sample</title>
+  </head>
+  <body>
+    <div class="container">
+       <p class="example">Para-1</p>
+    </div>
+    <button onclick="addPara()">Add Para</button>
+   
+      <script>
+          function addPara(){
+              var newpara = document.createElement("p");
+              newpara.className = "example";
+              newpara.textContent = "this is new para";
+ 
+              document.getElementsByClassName("container")[0].appendChild(newpara);
+ 
+          }
+      </script>
+  </body>
+  </html> -->
+ 
+  <!DOCTYPE html>
+  <html>
+  <head>
+      <title>Sample</title>
+  </head>
+  <body>
+    <div id="container">
+        <p class="example">Para-1</p>
+        <p class="example">Para-2</p>
+    </div>
+    <button onclick="removePara()">REMOVE PARA</button>
+   
+      <script>
+          function removePara(){
+            var elements = document.getElementsByClassName("example");  
+           
+            elements[0].remove();
+           
+          }
+      </script>
+  </body>
+  </html>
+```
