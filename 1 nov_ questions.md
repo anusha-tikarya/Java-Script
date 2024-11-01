@@ -65,3 +65,25 @@
 </html>
 ```
 
+## 4
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Onkeypress Count</title>
+</head>
+<body>
+    <input type="text" onkeypress="countKeyPresses()" id="inputField">
+    <p>Key Press Count: <span id="keyCount">0</span></p>
+
+    <script>
+        let count = 0;
+
+        function countKeyPresses() {
+            count++;
+            document.getElementById("keyCount").innerHTML = count;
+        }
+    </script>
+</body>
+</html>
+```
