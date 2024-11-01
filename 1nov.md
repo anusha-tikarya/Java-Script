@@ -9,3 +9,21 @@ web page -- root node -- document
 5. querySelectorAll()
 
 ## dom manipulation
+<img width="960" alt="{17B7C19F-0D8B-42B4-8DAF-A37550300996}" src="https://github.com/user-attachments/assets/4f257539-2b42-4581-869b-c808d4c02cc2">
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample</title>
+</head>
+<body>
+    <p id="example">This is a Original product</p>
+    <button onclick="changeText()">ADD TO CART</button>
+    <script>
+        function changeText(){
+            alert("added to cart")
+            document.getElementById("example").textContent = "Product added to the cart"
+        }
+    </script>
+</body>
+</html>
+ 
