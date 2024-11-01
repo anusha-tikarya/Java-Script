@@ -43,5 +43,25 @@
 </html>
 ```
 
+
+## 3
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title> OnClick Question </title>
+</head>
+</html>
+<body>
+<button onclick="changeText(this)">click me</button>
+<script>
+  function changeText(button){
+  button.innerHTML = "Clicked";
+  }
+  
+</script>
+
+</body>
+</html>
 ```
-## 2
+
