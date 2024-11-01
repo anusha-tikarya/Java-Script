@@ -27,3 +27,24 @@ web page -- root node -- document
 </body>
 </html>
  
+<img width="960" alt="{A34D09A4-15E9-4306-9CC9-EFFD345CB12E}" src="https://github.com/user-attachments/assets/ba5d87a8-fe7c-408d-b4ae-1ff7362f2ff7">
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample</title>
+</head>
+<body>
+    <p id="example">This is a Original product</p>
+    <button onclick="changeText()">ADD TO CART</button>
+    <script>
+        function changeText(){
+            document.getElementById("example").textContent = "Product added to the cart";
+            document.getElementById("example").style.color = "blue";
+            document.getElementById("example").style.fontSize = "30px";
+            document.getElementById("example").style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>
+ 
