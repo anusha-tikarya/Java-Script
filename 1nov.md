@@ -253,3 +253,27 @@ n.forEach(element => {
 });
 ```
 <img width="960" alt="{3D357995-B6D8-4093-9E58-E95720045E72}" src="https://github.com/user-attachments/assets/34ca0ee5-4960-49e8-832f-6318bf741cae">
+
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation with querySelectorAll</title>
+</head>
+<body>
+    <p>This is paragraph 1.</p>
+    <p>This is paragraph 2.</p>
+    <p>This is paragraph 3.</p>
+    <button onclick="changeAllText()">Change All Text</button>
+ 
+    <script>
+        function changeAllText() {
+            // Accessing all paragraphs and updating their text
+            const paragraphs = document.querySelectorAll("p");
+            paragraphs[1].textContent ="hello";
+        }
+    </script>
+</body>
+</html>
+```
+remove all the paragraph in one click
