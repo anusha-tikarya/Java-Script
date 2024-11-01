@@ -321,3 +321,11 @@ n.forEach(element => {
 ```
 to modify the contiler
 ## -------------
+<img width="960" alt="{5E1A1F7A-91CF-4A84-AD7A-E3F6F4169CD5}" src="https://github.com/user-attachments/assets/bb981e33-dc47-4ce7-8a85-61d2a94c0185">
+
+## ====================
+append child method : allow u add only one elemnet at a time
+what for multiple element : use append method or loops
+## -------------------
+list : doesn't support map and filter 
+arrays : support map and filter
