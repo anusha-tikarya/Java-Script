@@ -24,3 +24,24 @@
 </html>
 ```
 ## 2
+```html
+<!DOCTYPE html>
+<html>
+<head>
+  <title> Onload Question </title>
+</head>
+</html>
+<body onload = "pageloadedAlert()">
+<script>
+  function pageloadedAlert(){
+  alert("Page loaded! ");
+  }
+  
+</script>
+
+</body>
+</html>
+```
+
+```
+## 2
