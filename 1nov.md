@@ -10,6 +10,7 @@ web page -- root node -- document
 
 ## dom manipulation
 <img width="960" alt="{17B7C19F-0D8B-42B4-8DAF-A37550300996}" src="https://github.com/user-attachments/assets/4f257539-2b42-4581-869b-c808d4c02cc2">
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -26,9 +27,10 @@ web page -- root node -- document
     </script>
 </body>
 </html>
- 
+ ```
 <img width="960" alt="{A34D09A4-15E9-4306-9CC9-EFFD345CB12E}" src="https://github.com/user-attachments/assets/ba5d87a8-fe7c-408d-b4ae-1ff7362f2ff7">
 
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -47,8 +49,9 @@ web page -- root node -- document
     </script>
 </body>
 </html>
- 
+```
 ## ***********************************************************
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -65,9 +68,10 @@ web page -- root node -- document
 </body>
 </html>
 has context menu
-
+```
 
 # -----------------------------------------------
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -89,8 +93,9 @@ has context menu
     </script>
 </body>
 </html>
- 
+``` 
  ##  add------------------
+```html
 <!DOCTYPE html>
 <html>
 <head>
@@ -116,7 +121,7 @@ has context menu
     </script>
 </body>
 </html>
- 
+ ```
 ## - -----------------
 <img width="960" alt="{1909C1A5-A8BA-49CB-85C4-5DB9633E42A8}" src="https://github.com/user-attachments/assets/ca2e09ce-ce4a-4a00-a1c9-cc806dda1837">
 
@@ -159,4 +164,5 @@ has context menu
 
 ![Uploading {C24358C6-DBFC-4EBA-A106-3B61D97DE952}.png…]()
 
+<img width="960" alt="{8C2F9325-4BBE-4034-A74B-2200CA5A656D}" src="https://github.com/user-attachments/assets/64dd01cb-b0f2-48f3-8b6a-f21e71d902c1">
 
