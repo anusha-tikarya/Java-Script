@@ -1,3 +1,7 @@
+<img width="960" alt="{8F98D4DB-4E5E-4C50-A1F1-CDFA80007764}" src="https://github.com/user-attachments/assets/1695f3e3-0a07-404d-8e1c-0b68723d0cd5">
+
+<img width="960" alt="image" src="https://github.com/user-attachments/assets/76499184-de80-459a-9175-35fd2fbd3126">
+
 <img width="960" alt="{68258C46-B88B-428C-9EB3-A61C9252C370}" src="https://github.com/user-attachments/assets/f559ea3b-0b61-4808-b9e5-7ba5ed545d25">
 ## find nodes
 web page -- root node -- document
@@ -155,14 +159,13 @@ has context menu
 </body>
 </html>
 ```
-![Uploading {1436E0CF-214F-4D99-B8FF-B6462AEC9372}.png…]()
+.
+.
+.
+.
 
-![Uploading {102A2C12-C9F1-430A-B00A-39F43CBDB690}.png…]()
-
-![Uploading {D3E3EC0A-13DA-4F64-8587-840D756E452B}.png…]()
 <img width="960" alt="{0FEA265D-FFC2-4064-B912-856887171CAF}" src="https://github.com/user-attachments/assets/4df8b89f-d06d-43af-8e59-4fc6f90d0ea5">
 
-![Uploading {C24358C6-DBFC-4EBA-A106-3B61D97DE952}.png…]()
 
 <img width="960" alt="{8C2F9325-4BBE-4034-A74B-2200CA5A656D}" src="https://github.com/user-attachments/assets/64dd01cb-b0f2-48f3-8b6a-f21e71d902c1">
 ```html
