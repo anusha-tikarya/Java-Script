@@ -219,3 +219,26 @@ has context menu
 <img width="960" alt="{CBB0D38E-8E5B-495D-9A78-BCDA82C4523F}" src="https://github.com/user-attachments/assets/2131bd43-8a91-4d1d-ae2d-c1ca7711aa0f">
 
 <img width="960" alt="{C914E830-ACA2-4971-8EE4-DDAA8B0E7F5C}" src="https://github.com/user-attachments/assets/db0e01c2-051f-4f0b-9cda-fa61612dc7bd">
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation with querySelector</title>
+</head>
+<body>
+    <p>Look at my style change for paragraph 1!</p>
+    <p>Look at my style change for paragraph 2!</p>
+    <button onclick="changeStyle()">Change Style</button>
+ 
+    <script>
+        function changeStyle() {
+            // Accessing the first paragraph and updating its style
+            var paragraph = document.querySelector("p");
+            paragraph.style.color = "blue";
+            paragraph.style.fontSize = "20px";
+            paragraph.style.backgroundColor = "yellow";
+        }
+    </script>
+</body>
+</html>
+```
