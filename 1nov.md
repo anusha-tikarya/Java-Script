@@ -276,4 +276,25 @@ n.forEach(element => {
 </body>
 </html>
 ```
-remove all the paragraph in one click
+## remove all the paragraph in one click
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation with querySelectorAll</title>
+</head>
+<body>
+    <p>This is paragraph 1.</p>
+    <p>This is paragraph 2.</p>
+    <p>This is paragraph 3.</p>
+    <button onclick="removeAllParagraphs()">Remove All Paragraphs</button>
+ 
+    <script>
+        function removeAllParagraphs() {
+         
+            const paragraphs = document.querySelectorAll("p");
+            paragraphs.forEach(paragraph => paragraph.remove());
+        }
+    </script>
+</body>
+</html>
+ 
