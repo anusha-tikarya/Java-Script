@@ -246,8 +246,10 @@ has context menu
 </html>
 ```
 <img width="960" alt="{8EF1DD6D-6ED2-4299-B11D-373F96A17C6E}" src="https://github.com/user-attachments/assets/bf0d6c58-5100-4c30-96b8-a01369c876e1">
-
+```html
 n = [1,2,3,4,5]
 n.forEach(element => {
     console.log(element)
 });
+```
+<img width="960" alt="{3D357995-B6D8-4093-9E58-E95720045E72}" src="https://github.com/user-attachments/assets/34ca0ee5-4960-49e8-832f-6318bf741cae">
