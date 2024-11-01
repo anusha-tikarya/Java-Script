@@ -120,3 +120,32 @@ has context menu
 ## - -----------------
 <img width="960" alt="{1909C1A5-A8BA-49CB-85C4-5DB9633E42A8}" src="https://github.com/user-attachments/assets/ca2e09ce-ce4a-4a00-a1c9-cc806dda1837">
 
+<!DOCTYPE html>
+<html>
+<head>
+<title>Sample</title>
+</head>
+<body>
+<div id="container">
+<p id="removablepara">This para will be removed</p>
+</div>
+<button onClick="addParagraph()">Add Para</button>
+<button onclick="removeLastParagraph()">Remove Last Para</button>
+ 
+<script>
+    function addParagraph(){
+        var para = document.createElement("p");
+        para.textContent = "Para-1";
+        document.getElementById("container").appendChild(para);
+    }
+ 
+    function removeLastParagraph(){
+        var container = document.getElementById("container");
+        var paragraphs = container.getElementsByTagName("p");
+        if (paragraphs.length > 0) {
+            container.removeChild(paragraphs[paragraphs.length - 1]);
+        }
+    }
+</script>
+</body>
+</html>
