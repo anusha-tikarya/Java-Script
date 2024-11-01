@@ -247,3 +247,7 @@ has context menu
 ```
 <img width="960" alt="{8EF1DD6D-6ED2-4299-B11D-373F96A17C6E}" src="https://github.com/user-attachments/assets/bf0d6c58-5100-4c30-96b8-a01369c876e1">
 
+n = [1,2,3,4,5]
+n.forEach(element => {
+    console.log(element)
+});
