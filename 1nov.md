@@ -166,7 +166,7 @@ has context menu
 
 <img width="960" alt="{0FEA265D-FFC2-4064-B912-856887171CAF}" src="https://github.com/user-attachments/assets/4df8b89f-d06d-43af-8e59-4fc6f90d0ea5">
 
-
+# ------------------
 <img width="960" alt="{8C2F9325-4BBE-4034-A74B-2200CA5A656D}" src="https://github.com/user-attachments/assets/64dd01cb-b0f2-48f3-8b6a-f21e71d902c1">
 ```html
 <!-- <!DOCTYPE html>
@@ -297,4 +297,26 @@ n.forEach(element => {
     </script>
 </body>
 </html>
+
+
+ ## ------------inner.html
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>DOM Manipulation with innerHTML</title>
+</head>
+<body>
+    <div id="content">This is the original content.</div>
+    <button onclick="changeContent()">Change Content</button>
  
+    <script>
+        function changeContent() {
+            // Using innerHTML to replace the content inside the <div>
+            document.getElementById("content").innerHTML = "<strong>New content added with innerHTML!</strong>";
+        }
+    </script>
+</body>
+</html>
+```
+## -------------
