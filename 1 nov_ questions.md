@@ -87,3 +87,25 @@
 </body>
 </html>
 ```
+## 5
+```html
+<!DOCTYPE html>
+<html>
+<head>
+    <title>OnkeyUP Question</title>
+</head>
+<body>
+    <input type="text" onkeypress="displayUpperCase()" id="textInput">
+    <p>displayUppercase Text: <span id="uppercaseText"></span></p>
+
+    <script>
+
+
+        function displayUpperCase() {
+            let inputText = document.getElementById("textInput").value;
+            document.getElementById("uppercaseText").innerHTML = inputText.toUpperCase();
+        }
+    </script>
+</body>
+</html>
+```
