@@ -155,4 +155,6 @@ function getSubstring(str,start,end){
 let fname= "Anusha"
 getSubstring(fname,1,5)
  
+
+
 ```
