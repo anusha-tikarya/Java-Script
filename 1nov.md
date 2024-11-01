@@ -48,3 +48,75 @@ web page -- root node -- document
 </body>
 </html>
  
+## ***********************************************************
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample</title>
+</head>
+<body>
+    <p id="example">This is a Original text.</p>
+    <button onclick="changeText()">Change Text</button>
+    <script>
+        function changeText(){
+            alert("CHANGING THE TEXT")
+        }
+    </script>
+</body>
+</html>
+has context menu
+
+
+# -----------------------------------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample</title>
+</head>
+<body>
+    <div id="container">
+        <p>Para-1</p>
+    </div>
+    <button onclick="addParagraph()">Add Paragraph</button>
+ 
+    <script>
+        function addParagraph(){
+            var newpara = document.createElement("p");
+            newpara.textContent = "Para-2";
+ 
+            document.getElementById("container").appendChild(newpara);
+        }
+    </script>
+</body>
+</html>
+ 
+ ##  add------------------
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sample</title>
+</head>
+<body>
+    <div id="container">
+        <p>Para-1</p>
+    </div>
+    <button onclick="addParagraph()">Add Paragraph</button>
+ 
+    <script>
+        function addParagraph(){
+            var newpara = document.createElement("p");
+            newpara.textContent = "Para-2";
+ 
+            document.getElementById("container").appendChild(newpara);
+ 
+            var third = document.createElement("h1");
+            third.textContent= 'This is the Heading1';
+            document.getElementById("container").appendChild(third);
+        }
+    </script>
+</body>
+</html>
+ 
+## - -----------------
+<img width="960" alt="{1909C1A5-A8BA-49CB-85C4-5DB9633E42A8}" src="https://github.com/user-attachments/assets/ca2e09ce-ce4a-4a00-a1c9-cc806dda1837">
+
